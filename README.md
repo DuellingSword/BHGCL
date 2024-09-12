@@ -4,10 +4,10 @@
 
 
 ## Requirements
-python==3.9.18
-torch==1.12.0
-dgl==1.1.2
-cuda==116
+- python==3.9.18
+- torch==1.12.0
+- dgl==1.1.2
+- cuda==116
 
 ### Others
 ```python
