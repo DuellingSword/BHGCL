@@ -21,7 +21,7 @@ python main_recdcl.py --walk_length 20 --lr 0.001 --dataset Yelp --gpu 0 --num_w
 
 
 ## Experiment results
-![image](Experiment results.png)
+![image](experiment results.png)
 
 
 ## Datasets
