@@ -1,42 +1,38 @@
-# BHGCL-Pytorch
+# BHGCL: Bottleneced Heterogeneous Graph Contrastive Learning for Robust Recommendation
 ## Model Overview
 ![image](model.png)
 
 
 ## Requirements
-python==3.8.18  
-torch==1.12.0+cu116  
-fuxictr  
+python==3.9.18
+torch==1.12.0
+dgl==1.1.2
+cuda==116
 
 ### Others
 ```python
 pip install -r requirement.txt
 ```
 
+## Usage
+```python
+python main_recdcl.py --walk_length 20 --lr 0.001 --dataset Yelp --gpu 0 --num_workers 12 --batch 10240 --cl_rate 0.09 --IB_rate 0.0002
+```
+
+
 ## Experiment results
-![image](https://github.com/Acer888/IBNet/assets/45092309/dc701693-b95f-4387-a202-d862a64a2585)
+![image](Experiment results.png)
 
 
 ## Datasets
-Get the datasets from [https://github.com/openbenchmark/BARS/tree/main/datasets](https://github.com/reczoo/Datasets?tab=readme-ov-file#ctr-prediction)
-
-
-
-## Hyperparameter settings and logs
-
-Get the result from https://github.com/Acer888/IBNet/tree/master/IBNet_torch/checkpoints
-
-Get Mice(PBMish) activation function from https://github.com/Acer888/IBNet/blob/master/fuxictr/pytorch/layers/activations.py
-
-
+Get the datasets from [https://drive.google.com/drive/folders/12NpEY1Z6Ua_-GgN7ChliP98SvzNZ9Paw?usp=drive_link](https://drive.google.com/drive/folders/12NpEY1Z6Ua_-GgN7ChliP98SvzNZ9Paw?usp=drive_link)
 
 
 ## Acknowledgement
-This implementation is based on FuxiCTR and BARS. Thanks for their sharing and contribution.  
-BARS: https://github.com/openbenchmark  
-FuxiCTR: https://github.com/xue-pai/FuxiCTR
+Our work draws inspiration from two excellent works: [DCCF](github.com/HKUDS/DCCF) and [CGI](github.com/weicy15/CGI).
+Thanks for their sharing and contribution.
 
 
 
-# BHGCL
-实验用的五个数据集的链接：https://drive.google.com/drive/folders/12NpEY1Z6Ua_-GgN7ChliP98SvzNZ9Paw?usp=drive_link
+
+
