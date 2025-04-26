@@ -16,7 +16,7 @@ pip install -r requirement.txt
 
 ## Usage
 ```python
-python main_recdcl.py --walk_length 20 --lr 0.001 --dataset Yelp --gpu 0 --num_workers 12 --batch 10240 --cl_rate 0.09 --IB_rate 0.0002
+python main_BHGCL.py --walk_length 20 --lr 0.001 --dataset Yelp --gpu 0 --num_workers 12 --batch 10240 --cl_rate 0.09 --IB_rate 0.0002
 ```
 
 
